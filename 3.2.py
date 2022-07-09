@@ -2,9 +2,8 @@ import functools
 import time
 
 
-
 def repeater(call_count=1, start_sleep_time=0.5, factor=2, border_sleep_time=15):
-    """Повторение выполнения кода"""
+
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
